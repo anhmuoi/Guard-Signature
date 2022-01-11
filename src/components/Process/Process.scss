@@ -1,0 +1,108 @@
+@import '../../styles/variable';
+.process {
+    padding: 120px 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        margin-bottom: 41px;
+
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black-Four;
+    }
+    &__text {
+        max-width: 550px;
+        margin-bottom: 82px;
+
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black-Four;
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+
+        &-item {
+        
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 30px;
+        }
+        &-img {
+            margin-bottom: 36px;
+        }
+        &-title {
+
+            margin-bottom: 19px;
+
+            font-size: 22.5px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.47;
+            letter-spacing: normal;
+            text-align: center;
+            color: $black-Four;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.42;
+            letter-spacing: normal;
+            text-align: center;
+            color: $black-Four;
+        }
+    }
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    @media screen and (max-width: 1023.98px) {
+        &__list {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(2, 1fr);
+           &-item {
+            margin-top: 50px;
+        
+        }
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 50px 0;
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+       
+        }
+    }
+    
+}

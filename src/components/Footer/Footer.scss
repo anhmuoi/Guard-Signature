@@ -1,0 +1,54 @@
+@import '../../styles//variable';
+.footer {
+    padding: 60px 0 79px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+    }
+    &__title {
+        width: 267px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: $black-Four;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: $greyish;
+     
+    }
+    &__lastText {
+        margin-top: 35px;
+    }
+    &__right {
+        
+    }
+    &__icon {
+        display: flex;
+        gap: 18px;
+    }
+    @media screen and (max-width: 767.98px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+    
+}
