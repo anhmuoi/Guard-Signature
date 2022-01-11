@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
+import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai';
+
 interface Props {}
 
 const Navbar = (props: Props) => {
@@ -23,12 +25,12 @@ const Navbar = (props: Props) => {
 
                 <div className="nav__menu">
                     <div onClick={() => setShowMenu(true)}>
-                        <i className="fas fa-bars" style={{ color: 'white' }}></i>
+                        <AiOutlineMenu />
                     </div>
 
                     <ul className={`menu ${showMenu ? 'menu__is-show' : ''}`}>
                         <div onClick={() => setShowMenu(false)}>
-                            <i className=" fas fa-times menu__close"></i>
+                            <AiOutlineCloseCircle className='menu__close' />
                         </div>
                         <li className="menu-item">
                             <a href="/#" className="menu__link">
