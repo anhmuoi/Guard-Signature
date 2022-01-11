@@ -50,7 +50,7 @@ export const Process = (props: Props) => {
                         </div>
                     </div>
                     <div className="process__list-item">
-                        <img className="process__list-img" alt="" src={process4} />
+                        <img className="process__list-img lastImg" alt="" src={process4} />
                         <div className="process__content">
                             <div className="process__list-title">계약 완료</div>
                             <div className="process__list-text">
