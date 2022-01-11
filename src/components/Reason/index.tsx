@@ -66,10 +66,10 @@ const Reason = (props: Props) => {
                     <div className="reason__contentLeft">
                         {reasonLeft.map((item, index) => (
                             <>
-                                <img key={index} className="reason__contentLeft-icon" alt="" src={item.icon}></img>
-                                <p className="reason__contentLeft-title">{item.title}</p>
-                                <p className="reason__contentLeft-text1">{item.text1}</p>
-                                <p className="reason__contentLeft-text2">{item.text2}</p>
+                                <img key={index} className={`reason__contentRight-icon indexLeft${index}`} alt="" src={item.icon}></img>
+                                <p className={`reason__contentRight-title indexLeft${index}`}>{item.title}</p>
+                                <p className={`reason__contentRight-text1 indexLeft${index}`}>{item.text1}</p>
+                                <p className={`reason__contentRight-text2 indexLeft${index}`}>{item.text2}</p>
                             </>
                         ))}
                     </div>
@@ -77,7 +77,7 @@ const Reason = (props: Props) => {
                     <div className="reason__contentRight">
                         {reasonRight.map((item, index) => (
                             <>
-                                <img key={index} className="reason__contentRight-icon" alt="" src={item.icon}></img>
+                                <img key={index} className={`reason__contentRight-icon indexRight${index}`} alt="" src={item.icon}></img>
                                 <p className="reason__contentRight-title">{item.title}</p>
                                 <p className="reason__contentRight-text1">{item.text1}</p>
                                 <p className="reason__contentRight-text2">{item.text2}</p>
